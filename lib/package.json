@@ -10,6 +10,7 @@
     ".": {
       "import": "./dist/dpe-generator.js",
       "require": "./dist/dpe-generator.umd.cjs"
-    }
+    },
+    "./dist/style.css": "./dist/styles.css"
   }
 }
