@@ -1,7 +1,6 @@
 {
   "name": "dpe-generator",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,5 +13,17 @@
   },
   "dependencies": {
     "math": "^0.0.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/dpe-generator.umd.cjs",
+  "module": "./dist/dpe-generator.js",
+  "exports": {
+    ".": {
+      "import": "./dist/dpe-generator.js",
+      "require": "./dist/dpe-generator.umd.cjs"
+    },
+    "./dist/style.css": "./dist/styles.css"
   }
 }
