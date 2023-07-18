@@ -1,36 +1,38 @@
-const w = document.querySelectorAll(".dpe-generator-js");
-let v = 10, A = 29, z = 65, t = 35, e = 40, E = {
+const z = document.querySelectorAll(".dpe-generator-js");
+let A = 10, L = 29, G = 14, S = 65, t = 35, s = 40, _ = {
   a: t,
-  b: t + e,
-  c: t + e * 2,
-  d: t + e * 3,
-  e: t + e * 4,
-  f: t + e * 5,
-  g: t + e * 6
+  b: t + s,
+  c: t + s * 2,
+  d: t + s * 3,
+  e: t + s * 4,
+  f: t + s * 5,
+  g: t + s * 6
 };
-function c(s) {
-  const p = s.getAttribute("dpe-consommation"), l = s.getAttribute("dpe-emissions"), a = s.getAttribute("dpe-letter").toLowerCase(), d = s.getAttribute("dpe-type"), n = s.offsetWidth / 500, m = n * v, u = n * A, b = n * z, g = n * E[a], o = `style="font-size: ${m}px"`, i = `style="font-size: ${u}px"`, r = `style="height: ${b}px"`, f = `style="top: ${g}px"`, $ = "./img/energie/" + a + ".svg", y = new URL($, import.meta.url).href, h = `<figure class="dpeGenerator dpeGenerator-${d}">
-    <img id="dpeImg" src="${y}" alt="étiquette energie dpe ${a}">
-    <div ${f} class="dpeGenerator_infos">
+function c(e) {
+  const l = e.getAttribute("dpe-consommation"), m = e.getAttribute("dpe-emissions"), n = e.getAttribute("dpe-letter").toLowerCase(), d = e.getAttribute("dpe-type"), o = e.offsetWidth / 500, u = o * A, g = o * L, f = o * G, $ = o * S, b = o * _[n], i = `style="font-size: ${u}px"`, a = `style="font-size: ${f}px"`, r = `style="font-size: ${g}px"`, p = `style="height: ${$}px"`, y = `style="top: ${b}px"`, h = "./img/energie/" + n + ".svg", v = new URL(h, import.meta.url).href, x = n !== "f" && n !== "g" ? `<div class="dpeGenerator_passoire"><p ${a}>passoire<br> énergetique</p></div>` : "", w = `<figure class="dpeGenerator dpeGenerator-${d}">
+    ${x}
+    <div class="dpeGenerator_text"><p ${a}>Logement extrêmement performant</p><p ${a}>Logement extrêmement peu performant</p></div>
+    <img id="dpeImg" src="${v}" alt="étiquette energie dpe ${n}">
+    <div ${y} class="dpeGenerator_infos">
     <div class="dpeGenerator_infos_consommation">
-        <span ${o} class="top alt">consommation</span>
-        <span ${r} class="bot">
-            <span ${i} class="number number-consommation">${p}</span>
-            <span ${o} class="alt">kWh/m<sub>2</sub>/an</span>
+        <span ${i} class="top alt">consommation</span>
+        <span ${p} class="bot">
+            <span ${r} class="number number-consommation">${l}</span>
+            <span ${i} class="alt">kWh/m<sub>2</sub>/an</span>
         </span>
     </div>
     <div class="dpeGenerator_infos_emissions">
-        <span ${o} class="top alt">émissions</span>
-        <span ${r} class="bot">
-            <span ${i} class="number number-emissions">${l}<sub>*</sub></span>
-            <span ${o} class="alt">kg CO<sub>2</sub>/m<sup>2</sup>/an</span>
+        <span ${i} class="top alt">émissions</span>
+        <span ${p} class="bot">
+            <span ${r} class="number number-emissions">${m}<sub>*</sub></span>
+            <span ${i} class="alt">kg CO<sub>2</sub>/m<sup>2</sup>/an</span>
         </span>
     </div>
     </div>
     </figure>`;
-  s.innerHTML = h;
+  e.innerHTML = w;
 }
-w.forEach((s) => {
-  c(s);
+z.forEach((e) => {
+  c(e);
 });
 window.addEventListener("resize", c);

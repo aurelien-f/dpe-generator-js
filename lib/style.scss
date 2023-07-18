@@ -39,15 +39,11 @@ $font-sb : 600;
 }
 
 .test-container {
-    width: 450px;
+    width: 500px;
 
     @media screen and (max-width:991px) {
         width: 100%;
     }
-}
-
-body {
-    font-size: 5px;
 }
 
 .dpeGenerator {
@@ -60,6 +56,45 @@ body {
         width: 100%;
         height: auto;
         z-index: 0;
+    }
+
+    &_passoire {
+        position: absolute;
+        width: 30%;
+        bottom: 70px;
+        left: 0;
+
+        p {
+            font-family: $font;
+            font-weight: 400;
+            font-size: 14px;
+            color: gray;
+            margin: 0;
+            text-align: right;
+        }
+    }
+
+    &_text {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 33%;
+
+        p {
+            font-family: $font;
+            font-weight: 400;
+            font-size: 14px;
+            color: red;
+            margin: 0;
+
+            &:nth-child(1) {
+                color: green;
+            }
+        }
     }
 
     &_infos {
@@ -92,11 +127,12 @@ body {
                     margin: 0;
                     display: block;
                     text-align: center;
-                    font-weight: 400;
+                    font-weight: 500;
+                    letter-spacing: 0.1em;
                 }
 
                 .bot {
-                    border: 1px solid red;
+                    position: relative;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -108,12 +144,30 @@ body {
                         line-height: 1;
                         font-size: 29px;
                         font-weight: bold;
+                        position: absolute;
+                        top: 45%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                    }
+
+                    .alt {
+                        position: absolute;
+                        left: 0;
+                        text-align: center;
+                        width: 100%;
+                        bottom: 2px;
                     }
                 }
 
                 &_consommation {
                     position: relative;
                     width: 53%;
+
+                    .bot {
+                        .number {
+                            top: 40%;
+                        }
+                    }
                 }
 
                 &_emissions {
