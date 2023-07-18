@@ -1,0 +1,15 @@
+{
+  "name": "dpe-generator",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/dpe-generator.umd.cjs",
+  "module": "./dist/dpe-generator.js",
+  "exports": {
+    ".": {
+      "import": "./dist/dpe-generator.js",
+      "require": "./dist/dpe-generator.umd.cjs"
+    }
+  }
+}
