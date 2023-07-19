@@ -39,7 +39,7 @@ $font-sb : 600;
 }
 
 .test-container {
-    width: 400px;
+    width: 500px;
 
     @media screen and (max-width:991px) {
         width: 100%;
@@ -56,6 +56,12 @@ $font-sb : 600;
         width: 100%;
         height: auto;
         z-index: 0;
+    }
+
+    #textGes {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     &_passoire {
