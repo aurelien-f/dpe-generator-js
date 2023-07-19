@@ -17,6 +17,11 @@ Génère un affichage DPE (Performance énergétique et Performance climatique) 
 ### Head
 
     <link  href="../node_modules/dpe-generator/dist/style.css"  type="text/css"  rel="stylesheet"  media="screen,projection" />
+    <link  rel="preconnect"  href="https://fonts.googleapis.com">
+	<link  rel="preconnect"  href="https://fonts.gstatic.com"  crossorigin>
+	<link  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&display=swap"
+
+rel="stylesheet">
     
 ## How to use ?
 
