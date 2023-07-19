@@ -119,6 +119,7 @@ $font-sb : 600;
 
                 .alt {
                     font-size: 10px;
+                    font-family: $font;
                 }
 
                 .top {
@@ -148,6 +149,7 @@ $font-sb : 600;
                         font-size: 29px;
                         font-weight: bold;
                         position: absolute;
+                        font-family: $font;
                         top: 45%;
                         left: 50%;
                         transform: translateX(-50%) translateY(-50%);
