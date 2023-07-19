@@ -115,6 +115,7 @@ $font-sb : 600;
             &_infos {
                 width: 30%;
                 margin-left: 3.5%;
+                font-family: $font;
 
                 .alt {
                     font-size: 10px;
@@ -129,6 +130,7 @@ $font-sb : 600;
                     text-align: center;
                     font-weight: 500;
                     letter-spacing: 0.1em;
+                    font-family: $font;
                 }
 
                 .bot {
@@ -139,6 +141,7 @@ $font-sb : 600;
                     flex-direction: column;
                     width: 100%;
                     height: 65px;
+                    font-family: $font;
 
                     .number {
                         line-height: 1;
@@ -156,6 +159,7 @@ $font-sb : 600;
                         text-align: center;
                         width: 100%;
                         bottom: 2px;
+                        font-family: $font;
                     }
                 }
 
