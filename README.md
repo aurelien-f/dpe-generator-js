@@ -19,9 +19,7 @@ Génère un affichage DPE (Performance énergétique et Performance climatique) 
     <link  href="../node_modules/dpe-generator/dist/style.css"  type="text/css"  rel="stylesheet"  media="screen,projection" />
     <link  rel="preconnect"  href="https://fonts.googleapis.com">
 	<link  rel="preconnect"  href="https://fonts.gstatic.com"  crossorigin>
-	<link  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&display=swap"
-
-rel="stylesheet">
+	<link  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
     
 ## How to use ?
 
@@ -30,9 +28,9 @@ rel="stylesheet">
 **Init** the module with class : `.dpe-generator-js`
 
 **Options :** 
-**dpe-type :** Type de module -> dpe *(ges en cours de dev)*
-**dpe-letter :** Lettre -> a / b /  c /  d /  e /  f /  g
-**dpe-consommation :** Valeur de la consommation -> ex : 450
-**dpe-emissions :** Valeur de la consommation -> ex : 90
+- **dpe-type :** Type de module -> dpe *(ges en cours de dev)*
+- **dpe-letter :** Lettre -> a / b /  c /  d /  e /  f /  g
+- **dpe-consommation :** Valeur de la consommation -> ex : 450
+- **dpe-emissions :** Valeur de la consommation -> ex : 90
 
 Le module est responsive sur une base de 500px de largeur. 
