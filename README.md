@@ -1,14 +1,14 @@
 # Getting started
 
-Génère un affichage DPE (Performance énergétique et Performance climatique) réglementaire (2023)
+Génère un affichage DPE ou GES (Performance énergétique et Performance climatique) réglementaire (2023)
 
-![Exemple de schéma DPE ](https://i.postimg.cc/QxTS2zPj/Capture-d-e-cran-2023-07-19-a-09-35-28.png)
+![Exemple de schéma DPE ou GES ](https://i.postimg.cc/v8KwcF6x/dpe-ges.jpg)
 
 ## Install
 
     npm i dpe-generator
 
-## Import the components
+## Scripts
 
 ### Footer
 
@@ -17,20 +17,20 @@ Génère un affichage DPE (Performance énergétique et Performance climatique) 
 ### Head
 
     <link  href="../node_modules/dpe-generator/dist/style.css"  type="text/css"  rel="stylesheet"  media="screen,projection" />
-    <link  rel="preconnect"  href="https://fonts.googleapis.com">
-	<link  rel="preconnect"  href="https://fonts.gstatic.com"  crossorigin>
-	<link  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
     
 ## How to use ?
+Exemple de code pour un affichage DPE :
+    `<div class="dpe-generator-js" dpe-type="dpe" dpe-letter="g" dpe-consommation="450" dpe-emissions="90"></div>`
 
-    <div class="dpe-generator-js" dpe-type="dpe" dpe-letter="G" dpe-consommation="450" dpe-emissions="90"></div>
+Exemple de code pour un affichage GES :
+    `<div class="dpe-generator-js" dpe-type="ges" dpe-letter="f" dpe-emissions="80"></div>`
 
-**Init** the module with class : `.dpe-generator-js`
+**Init** le module avec la class : `.dpe-generator-js`
 
 **Options :** 
-- **dpe-type :** Type de module -> dpe *(ges en cours de dev)*
+- **dpe-type :** Type d'affichage -> dpe ou ges
 - **dpe-letter :** Lettre -> a / b /  c /  d /  e /  f /  g
-- **dpe-consommation :** Valeur de la consommation -> ex : 450
-- **dpe-emissions :** Valeur de la consommation -> ex : 90
+- **dpe-consommation :** Valeur de la consommation énergétique -> ex : 450
+- **dpe-emissions :** Valeur des émissions de C02 -> ex : 90
 
-Le module est responsive sur une base de 500px de largeur. 
+Le module s'adapte par rapport à la largeur du container. Affichage le plus clair à 500px de largeur. 
