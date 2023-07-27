@@ -1,7 +1,10 @@
 {
   "name": "dpe-generator",
-  "version": "2.0.2",
+  "version": "2.1.0",
+  "author": "Aurélien Feuillard",
+  "license": "MIT",
   "type": "module",
+  "repository": "aurelien-f/dpe-generator-js/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
