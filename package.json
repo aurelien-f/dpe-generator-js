@@ -4,7 +4,10 @@
   "author": "Aurélien Feuillard",
   "license": "MIT",
   "type": "module",
-  "repository": "aurelien-f/dpe-generator-js/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aurelien-f/dpe-generator-js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
